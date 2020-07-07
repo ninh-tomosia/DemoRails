@@ -1,0 +1,11 @@
+<%= form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :email %>
+    <%= f.text_field :email, type: 'email' %>
+    <%= f.label :phone %>
+    <%= f.text_field :phone, type: 'tel' %>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+    <%= f.submit "#{@name_btn}" %>
+<% end %>
